@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:paddingBottom="@dimen/activity_vertical_margin" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" app:layout_behavior="@string/appbar_scrolling_view_behavior" tools:context="com.example.dell.hrapp.ShowDetail">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tv_firstname" tools:text="Firstname" android:textAppearance="@android:style/TextAppearance.Medium" />
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="1dp" android:layout_marginTop="10dp">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/divider" />
+</LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tv_lastname" android:layout_below="@+id/tv_firstname" tools:text="Lastname" android:textAppearance="@android:style/TextAppearance.Medium" />
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="1dp" android:layout_marginTop="10dp">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/divider" />
+</LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tv_gender" android:layout_below="@+id/tv_lastname" tools:text="Gender" android:textAppearance="@android:style/TextAppearance.Medium" />
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="1dp" android:layout_marginTop="10dp">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/divider" />
+</LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tv_birthdate" android:layout_below="@+id/tv_gender" tools:text="Birthdate" android:textAppearance="@android:style/TextAppearance.Medium" />
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="1dp" android:layout_marginTop="10dp">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/divider" />
+</LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tv_Address" android:layout_below="@+id/tv_birthdate" tools:text="Address" android:textAppearance="@android:style/TextAppearance.Medium" />
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="1dp" android:layout_marginTop="10dp">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/divider" />
+</LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tv_HireDate" android:layout_below="@+id/tv_Address" tools:text="HireDate" android:textAppearance="@android:style/TextAppearance.Medium" />
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="1dp" android:layout_marginTop="10dp">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/divider" />
+</LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tv_Position" android:layout_below="@+id/tv_HireDate" tools:text="Position" android:textAppearance="@android:style/TextAppearance.Medium" />
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="1dp" android:layout_marginTop="10dp">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/divider" />
+</LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tv_Department" android:layout_below="@+id/tv_Position" tools:text="Department" android:textAppearance="@android:style/TextAppearance.Medium" />
+     <LinearLayout android:layout_width="fill_parent" android:layout_height="1dp" android:layout_marginTop="10dp">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/divider" />
+</LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tv_Salary" android:layout_below="@+id/tv_Department" tools:text="Salary" android:textAppearance="@android:style/TextAppearance.Medium" />
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_money_dept"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="Money For Each Department"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_money_tax_dept"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="Money On Taxes For Employees"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_money_bonus_dept"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="Money On Bonuses For Employees"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_employee_exp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="Employee more than 2year experience"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_employee_exp_less"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="Employee less than 2year experience"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</LinearLayout>

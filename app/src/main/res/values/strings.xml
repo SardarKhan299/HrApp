@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HrApp</string>
+    <string name="action_settings"> Add Employee </string>
+    <string name="title_activity_administration">Administration</string>
+    <string name="title_activity_add_new_employee">AddNewEmployee</string>
+    <string name="title_activity_show_all_employees">ShowAllEmployees</string>
+    <string name="title_activity_show_detail">ShowDetail</string>
+    <string name="title_activity_edit_employee">EditEmployee</string>
+    <string name="title_activity_report">Report</string>
+    <string name="title_activity_show_department_salary">ShowDepartmentSalary</string>
+</resources>

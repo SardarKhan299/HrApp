@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_add_emp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="Add Employee"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_edit_emp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="Edit"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_delete_emp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="Delete"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+</LinearLayout>
