@@ -116,17 +116,8 @@ public class EmployeeDBHelper extends SQLiteOpenHelper {
     }
 
 
-    public Cursor getAllEmployees() {
-        SQLiteDatabase db = getReadableDatabase();
-        Cursor res = db.query(EmployeesContract.TABLE_NAME_EMPLOYEES, null, EmployeesContract.COLUMN_IS_DELETED + " = '" + 0 + "' ", null, null, null, null);
-        return res;
-    }
 
-    public Cursor getEmployeeDetail(String empId) {
-        SQLiteDatabase db = getReadableDatabase();
-        Cursor res = db.query(EmployeesContract.TABLE_NAME_EMPLOYEES, null, EmployeesContract.COLUMN_EMPLOYEE_NO + " = '" + empId + "' ", null, null, null, null,"1");
-        return res;
-    }
+
     public String getEmployeeSalary(String empId) {
         SQLiteDatabase db = getReadableDatabase();
         String[] columns = {EmployeesContract.COLUMN_SALARY};
@@ -178,48 +169,10 @@ public class EmployeeDBHelper extends SQLiteOpenHelper {
 
 
 
-    public int deleteEmployee(String emp_id)
-    {
-        Log.d(TAG, "deleteEmployee: " + emp_id);
-
-        SQLiteDatabase db = getWritableDatabase();
-        ContentValues value = new ContentValues();
-        value.put(EmployeesContract.COLUMN_IS_DELETED, 1);
-
-        int deletedId = db.update(EmployeesContract.TABLE_NAME_EMPLOYEES, value,
-                EmployeesContract.COLUMN_EMPLOYEE_NO + " = ? ", new String[]{emp_id});
 
 
-        Log.d(TAG, "Delete Employee: Number of Record Deleted"+deletedId);
-
-        return deletedId;
-    }
 
 
-    public long insertEmployee(String firstname,String lastname,String gender,String birthdate,
-                               String address,String hireDate,int bonus)
-    {
-
-        SQLiteDatabase db = getWritableDatabase();
-        ContentValues value = new ContentValues();
-        value.put(EmployeesContract.COLUMN_FIRSTNAME,firstname);
-        value.put(EmployeesContract.COLUMN_LASTNAME, lastname);
-        value.put(EmployeesContract.COLUMN_GENDER, gender);
-        value.put(EmployeesContract.COLUMN_BIRTH_DATE, birthdate);
-        value.put(EmployeesContract.COLUMN_ADDRESS, address);
-        value.put(EmployeesContract.COLUMN_HIRE_DATE, hireDate);
-        value.put(EmployeesContract.COLUMN_BONUS, bonus);
-        value.put(EmployeesContract.COLUMN_IS_DELETED, 0);
-
-        long last_inserted_employee_id = db.insert(EmployeesContract.TABLE_NAME_EMPLOYEES, null, value);
-
-        if (last_inserted_employee_id == -1)
-            return -1;
-        else
-            return last_inserted_employee_id;
-
-
-    }
 
     public int updateEmployee(String firstname,String lastname,String gender,String birthdate,
                               String address,String hireDate,String emp_id,int bonus)

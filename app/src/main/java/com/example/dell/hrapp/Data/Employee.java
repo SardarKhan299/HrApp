@@ -1,19 +1,50 @@
 package com.example.dell.hrapp.Data;
 
+import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.Ignore;
+import android.arch.persistence.room.PrimaryKey;
+
 /**
  * Created by DELL on 4/13/2017.
  */
+@Entity (tableName = "employees")
 public class Employee {
 
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "empno")
     String empNo;
+    @ColumnInfo(name = "firstname")
     String firstname;
+    @ColumnInfo(name = "lastname")
     String lastname;
+    @ColumnInfo(name = "gender")
     String gender;
+    @ColumnInfo(name = "birthdate")
     String birthdate;
+    @ColumnInfo(name = "address")
     String address;
+    @ColumnInfo(name = "hiredate")
     String hireDate;
+    @ColumnInfo(name = "bonus")
     String bonus;
+    @ColumnInfo(name = "isDeleted")
+    String isDeleted;
+    @Ignore
     String salaryPlusBonus;
+    @Ignore
+    String departmentName;
+    @Ignore
+    String salary;
+
+
+    public String getIsDeleted() {
+        return isDeleted;
+    }
+
+    public void setIsDeleted(String isDeleted) {
+        this.isDeleted = isDeleted;
+    }
 
     public String getSalaryPlusBonus() {
         return salaryPlusBonus;
@@ -51,8 +82,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    String departmentName;
-    String salary;
+
 
 
     public String getEmpNo() {
